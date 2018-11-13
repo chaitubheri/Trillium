@@ -1,0 +1,11 @@
+#!/Users/mbheri/PycharmProjects/Trillium/venv/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from awsrdsmanager.__main__ import sunset_rds_snapshots
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(sunset_rds_snapshots())
